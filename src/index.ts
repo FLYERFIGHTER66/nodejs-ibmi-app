@@ -15,4 +15,6 @@ db.connect(connectionString).then(() => {
   app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   });
+}).catch(e => {
+  console.log(e);
 });
