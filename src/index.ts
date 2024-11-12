@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(json());
 
 app.use(root);
-app.use('/employees');
+app.use('/employees', employees);
 
 db.connect(connectionString).then(() => {
   app.listen(port, () => {
